@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
 
         String hoten = ethoten.getText().toString();
         String namsinh = etnamsinh.getText().toString();
-        if(hoten.length()==0){
+        if(hoten.length()==0 || namsinh.length() == 0){
             Toast.makeText(
                     MainActivity.this,
-                    "Nhap vao TEN",
+                    "Nhap vao TÊN và NĂMSINH",
                     Toast.LENGTH_LONG
             ).show();
         }
